@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="city_name_for_list"> %s, %s, %s</string>
+    <string name="max_temp">H: %s\u00B0</string>
+    <string name="min_temp">L: %s\u00B0</string>
+    <string name="wind">Wind\n%s km/h </string>
+    <string name="humidity">Humidity\n\%%%s </string>
+    <string name="min_temp_for_list">%s\u00B0</string>
+    <string name="max_temp_for_list">%s\u00B0/</string>
+    <string name="new_locations">New locations</string>
+    <string name="search_by_city_name">Search by city name...</string>
+    <string name="add_new_location">Add new location</string>
+    <string name="saved_locations">Saved locations</string>
+    <string name="degree">°</string>
+    <string name="following_days">Following days</string>
+
+
+</resources>

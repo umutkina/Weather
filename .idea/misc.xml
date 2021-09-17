@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.21105072463768115" />
+        <entry key="app/src/main/res/layout/city_add_fragment.xml" value="0.21105072463768115" />
+        <entry key="app/src/main/res/layout/city_list_fragment.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/city_list_item.xml" value="0.21105072463768115" />
+        <entry key="app/src/main/res/layout/city_search_fragment.xml" value="0.19157608695652173" />
+        <entry key="app/src/main/res/layout/city_search_item.xml" value="0.19157608695652173" />
+        <entry key="app/src/main/res/layout/daily_weather_adapter.xml" value="0.1953125" />
+        <entry key="app/src/main/res/layout/weather_fragment.xml" value="0.2411467116357504" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16944444444444445" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.16944444444444445" />
+        <entry key="app/src/main/res/xml/network_security_config.xml" value="0.21105072463768115" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

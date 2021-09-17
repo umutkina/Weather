@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/santral_regular"
+            android:text="@{weather.weekDay}"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMinTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/santral_regular"
+            android:text="@{@string/min_temp_for_list(weather.mintempC)}"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvDay"
+            app:layout_goneMarginEnd="12dp" />
+
+        <TextView
+            android:id="@+id/tvMaxTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/santral_regular"
+            android:text="@{@string/max_temp_for_list(weather.maxtempC)}"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDay"
+            app:layout_constraintEnd_toStartOf="@+id/tvMinTemp"
+            app:layout_constraintTop_toTopOf="@+id/tvDay" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+        <variable
+            name="weather"
+            type="com.lemonz.weatherapp.data.model.weather.Weather" />
+    </data>
+</layout>

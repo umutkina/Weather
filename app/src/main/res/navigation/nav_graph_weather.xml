@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_character"
+    app:startDestination="@id/list_search_dest">
+
+
+    <fragment
+        android:id="@+id/weather_dest"
+        android:name="com.lemonz.weatherapp.ui.WeatherFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/weather_fragment">
+        <action
+            android:id="@+id/action_details"
+            app:destination="@id/city_list_dest" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/city_list_dest"
+        android:name="com.lemonz.weatherapp.ui.CityListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/city_list_fragment">
+        <action
+            android:id="@+id/action_list_to_weather"
+            app:destination="@id/weather_dest" />
+
+        <action
+            android:id="@+id/action_list_to_search"
+            app:destination="@id/list_search_dest" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/list_search_dest"
+        android:name="com.lemonz.weatherapp.ui.CitySearchFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/city_search_fragment">
+        <action
+            android:id="@+id/action_search_to_weather"
+            app:destination="@id/weather_dest" />
+    </fragment>
+
+
+</navigation>
